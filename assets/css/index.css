@@ -1,0 +1,450 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 16px;
+
+    @media (min-width: 768px) {
+        justify-content: space-between;
+    }
+}
+
+.navbar__title {
+    display: flex;
+    font-size: 31.11px;
+    font-weight: bold;
+    line-height: 120%;
+}
+
+.navbar__logo {
+    margin-right: 12px;
+}
+
+.navbar__title__first {
+    color: #F17228;
+}
+
+.navbar__title__second {
+    color: #FFB30E;
+}
+
+.navbar__links {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar__login {
+    cursor: pointer;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 0;
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    min-height: 100%;
+    background-image: url(/foodwagon/assets/images/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 100%;
+}
+
+.header__content {
+    max-width: 42%;
+    margin: 16px;
+
+    @media (min-width: 768px) {
+        margin-left: 20%;
+    }
+}
+
+.header__title {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bold;
+
+    @media (min-width: 768px) {
+        font-size: 64px;
+    }
+}
+
+.header__description {
+    color: #504F4F;
+    margin: 16px 0;
+
+    @media (min-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+.header__help {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.button {
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    background: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.button--primary {
+    background-color: #FF7A7A;
+    color: #FFFFFF;
+}
+
+.button--secondary {
+    background-color: #25D366;
+    color: #FFFFFF;
+}
+
+
+.promotions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 32px;
+    font-weight: bold;
+    gap: 16px;
+    max-width: 1600px;
+    margin: 80px auto;
+}
+
+.promotion-card__image {
+    border-radius: 16px;
+    max-width: 100%;
+}
+
+.promotion-card__title {
+    margin: 0;
+    line-height: 1;
+    margin-top: 32px;
+    margin-bottom: 14px;
+    color: #424242;
+}
+
+.promotion-card__badge {
+    background-color: rgba(241, 114, 40, 0.2);
+    color: #F17228;
+    padding: 8px 16px 8px 16px;
+    max-width: fit-content;
+    border-radius: 8px;
+}
+
+.promotion-card__wrapper {
+    display: flex;
+    position: relative;
+}
+
+.promotion-card__discount {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFFFFF;
+    background-color: #FFB30E;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding: 10px 18px;
+}
+
+.promotion-card__discount__number {
+    font-size: 68px;
+    font-weight: bold;
+    line-height: 0.8;
+}
+
+.promotion-card__discount__right {
+    line-height: 0.8;
+}
+
+.promotion-card__discount__percentage {
+    font-size: 35px;
+}
+
+.promotion-card__discount__off {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.steps {
+    background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 298px;
+
+    @media (min-width: 768px) {
+        padding: 80px 200px;
+    }
+}
+
+.steps__title {
+    color: #F17228;
+    font-weight: bold;
+    font-size: 44px;
+    margin: 0;
+    margin-bottom: 71px;
+}
+
+.step-card__list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.step-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.step-card__image {
+    margin-bottom: 41px;
+}
+
+.step-card__title {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #434343;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.step-card__description {
+    margin: 0;
+    color: #9E9E9E;
+    font-size: 18px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.feature-card {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 16px;
+    box-shadow: 0px 27px 82px rgba(124, 124, 124, 0.28);
+    flex-wrap: wrap;
+}
+
+.feature-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.feature-card:nth-child(even) .feature-card__image {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.feature-card__content {
+    padding: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 519px;
+}
+
+.feature-card__title {
+    color: #353535;
+    font-size: 43px;
+    font-weight: bold;
+    margin-bottom: 19px;
+}
+
+.feature-card__title>span {
+    color: #FFB30E;
+}
+
+.feature-card__description {
+    color: #616161;
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 111.5px;
+}
+
+.feature-card__button {
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(255, 184, 0);
+    padding: 21px 112px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+}
+
+.feature-card__button:hover {
+    background-color: rgb(217, 156, 0);
+}
+
+.feature-card__image {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.footer {
+    margin-top: 135px;
+    padding: 99px 24px;
+    background-color: #212121;
+    color: #FFFFFF;
+
+    @media (min-width: 768px) {
+        padding: 99px 0;
+    }
+}
+
+.cities__title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.city__title {
+    color: #F5F5F5;
+    font-size: 18px;
+}
+
+.footer__section {
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.cities-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 100px 0;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(5, 1fr);
+        /* gap: 234.75px; */
+    }
+}
+
+.cities {
+    color: #F5F5F5;
+    size: 18px;
+}
+
+.separator {
+    width: 100%;
+    background-color: #424242;
+    height: 2px;
+    margin-top: 99px;
+}
+
+.footer__links {
+    margin-top: 63px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.links {}
+
+.links__title {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.link__text {
+    display: block;
+    color: #F5F5F5;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+.social {}
+
+.social__title {
+    opacity: 0.6;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.social__icon {
+    margin-top: 40px;
+    margin-bottom: 43px;
+    opacity: 0.31;
+    margin-right: 16px;
+}
+
+.footer__copy {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.copy__reserved {
+    color: #F5F5F5;
+    font-size: 15px;
+}
+
+.copy__company {
+    color: #F5F5F5;
+    font-size: 15px;
+    font-weight: bold;
+}
